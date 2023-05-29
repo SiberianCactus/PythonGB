@@ -13,7 +13,9 @@
 
 n = int(input('Введите количество элементов: '))
 
-array = [i+1 for i in range(n)]
+array = []
+for i in range(n):
+    array.append(int(input()))
 print(array)
 
 x = int(input('Введите требуемое число: '))
@@ -21,4 +23,4 @@ number_to_find = 0
 for i in array:
     if i == x:
         number_to_find += 1
-        print(number_to_find)
+print(number_to_find)
